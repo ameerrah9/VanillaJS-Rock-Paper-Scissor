@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #082c6c;
+  font-family: ui-monospace;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+  color: yellow;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  z-index: 2;
+  color: #fff;
+}
+
+.player-count,
+.comp-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.choices {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.move {
+  font-size: 20px;
+  font-weight: bold;
+  color: #87ebcb;
+}
+
+.rock,
+.paper,
+.scissors {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 80px;
+}
